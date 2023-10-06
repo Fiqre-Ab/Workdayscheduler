@@ -1,103 +1,43 @@
-# Workdayscheduler
+Work Day Scheduler
+This is a simple Day Planner that allows users to plan their day by adding and saving tasks for specific hours. It provides a visual representation of the current time and allows users to save their tasks in local storage for later reference.
 
-# 05 Third-Party APIs: Work Day Scheduler
+Features
+Display of the current date in the header.
+Dynamic coloring of time blocks to indicate past, present, and future hours.
+Ability to add tasks for specific hours.
+Save tasks in local storage for persistence.
+Getting Started
+To use this Day Planner app, follow these steps:
 
-## Your Task
+Clone the repository to your local machine.
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+Open the index.html file in your preferred web browser.
 
-You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+You will see a display of time blocks representing different hours of the day. The current date is displayed in the header.
 
-## User Story
+Each time block has a text area where you can enter your tasks for that hour.
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+The time blocks are color-coded to indicate the past (gray), present (red), and future (green) hours.
 
-## Acceptance Criteria
+To add a task, simply click on the text area for the corresponding hour, enter your task, and click the "Save" button to the right of the text area.
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+Your task will be saved in local storage, so you can revisit the page later and your tasks will still be there.
 
-The following animation demonstrates the application functionality:
+Code Overview
+The code is structured as follows:
 
-<!-- @TODO: create ticket to review/update image) -->
+The current date is displayed in the header using the Day.js library to format the date.
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+The time blocks are dynamically colored based on the current time using the updateBlockClasses function. Past hours are gray, the present hour is red, and future hours are green.
 
-## Grading Requirements
+User input for tasks is saved in local storage when the "Save" button is clicked.
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> - A repository that has no code
->
-> - A repository that includes a unique name but nothing else
->
-> - A repository that includes only a README file but nothing else
->
-> - A repository that only includes starter code
+When the page is loaded, tasks saved in local storage are retrieved and displayed in the corresponding time blocks.
 
-This Challenge is graded based on the following criteria:
+Contributors
+[Your Name]
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Technical Acceptance Criteria: 40%
-
-- Satisfies all of the above acceptance criteria plus the following:
-
-  - Uses a date utility library to work with date and time
-
-### Deployment: 32%
-
-- Application deployed at live URL
-
-- Application loads with no errors
-
-- Application GitHub URL submitted
-
-- GitHub repo contains application code
-
-### Application Quality: 15%
-
-- Application user experience is intuitive and easy to navigate
-
-- Application user interface style is clean and polished
-
-- Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-- Repository has a unique name
-
-- Repository follows best practices for file structure and naming conventions
-
-- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-- Repository contains multiple descriptive commit messages
-
-- Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-- The URL of the deployed application
-
-- The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Acknowledgments
+Day.js
