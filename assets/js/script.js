@@ -24,7 +24,7 @@
 
 $(function () {
   // Display the current date in the header
-  var currentDate = dayjs().format("ddd MMM D");
+  var currentDate = dayjs().format("dddd MMMM D");
   $("#currentDay").text(currentDate);
 
   // Function to update time-block classes based on current time

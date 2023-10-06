@@ -43,3 +43,5 @@ Feedback and Contributions
 We welcome your feedback and contributions to improve the Work Day Scheduler. Feel free to open issues or submit pull requests on the GitHub repository. Your input is valuable in making this tool even better for users.
 
 We hope you find Work Day Scheduler a useful addition to your daily routine!
+
+MIT License - Copyright (c) [Fiqre]
