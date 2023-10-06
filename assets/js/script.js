@@ -28,6 +28,7 @@ $(function () {
     var blockId = $(this).closest(".time-block").attr("id");
     var userInput = $(this).siblings("textarea").val();
     localStorage.setItem(blockId, userInput);
+    appointment();
   });
 
   // Load user input from local storage
@@ -38,4 +39,19 @@ $(function () {
       $(this).find("textarea").val(storedInput);
     }
   });
+  function appointment() {
+    // Create a new list item with a message
+    var li = $("<li>").text("Appointment Added to localStorage \u{1F60A}");
+    li.css({
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center", // Adjust the height as needed
+    });
+    // Append the list item to the first div in the body
+    $("body").find("div:first").prepend(li);
+    // Set a timeout to hide the message after 5 seconds
+    setTimeout(function () {
+      li.hide();
+    }, 400); // 5000 milliseconds (5 seconds)
+  }
 });
