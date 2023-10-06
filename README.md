@@ -44,4 +44,4 @@ We welcome your feedback and contributions to improve the Work Day Scheduler. Fe
 
 We hope you find Work Day Scheduler a useful addition to your daily routine!
 
-MIT License - Copyright (c) [Fiqre]
+MIT License - Copyright
