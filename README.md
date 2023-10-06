@@ -1,43 +1,45 @@
-Work Day Scheduler
-This is a simple Day Planner that allows users to plan their day by adding and saving tasks for specific hours. It provides a visual representation of the current time and allows users to save their tasks in local storage for later reference.
+# Work Day Scheduler
 
-Features
-Display of the current date in the header.
-Dynamic coloring of time blocks to indicate past, present, and future hours.
-Ability to add tasks for specific hours.
-Save tasks in local storage for persistence.
-Getting Started
-To use this Day Planner app, follow these steps:
+![Work Day Scheduler Screenshot](./assets/image/Screenshot%202023-10-05%20211609.png)
 
-Clone the repository to your local machine.
+## Overview
 
-Open the index.html file in your preferred web browser.
+Work Day Scheduler is a simple and intuitive day planner that helps you manage your tasks effectively. This web application provides a visual representation of your work hours, allowing you to add, save, and track your daily tasks easily.
 
-You will see a display of time blocks representing different hours of the day. The current date is displayed in the header.
+## Features
 
-Each time block has a text area where you can enter your tasks for that hour.
+- **Current Date Display**: The header displays the current date, so you always know which day you're planning.
 
-The time blocks are color-coded to indicate the past (gray), present (red), and future (green) hours.
+- **Time Block Coloring**: Time blocks are color-coded to indicate past (gray), present (red), and future (green) hours, providing a clear visual reference.
 
-To add a task, simply click on the text area for the corresponding hour, enter your task, and click the "Save" button to the right of the text area.
+- **Task Management**: You can add and edit tasks for specific hours by simply clicking on the corresponding time block and entering your task.
 
-Your task will be saved in local storage, so you can revisit the page later and your tasks will still be there.
+- **Local Storage**: Your tasks are automatically saved in local storage, ensuring that you never lose your schedule, even if you close the page or refresh it.
 
-Code Overview
-The code is structured as follows:
+## Getting Started
 
-The current date is displayed in the header using the Day.js library to format the date.
+To get started with the Work Day Scheduler, follow these simple steps:
 
-The time blocks are dynamically colored based on the current time using the updateBlockClasses function. Past hours are gray, the present hour is red, and future hours are green.
+Plan Your Day: You'll see time blocks representing different hours of the day. Click on any time block to add or edit tasks.
 
-User input for tasks is saved in local storage when the "Save" button is clicked.
-
-When the page is loaded, tasks saved in local storage are retrieved and displayed in the corresponding time blocks.
+Save Your Tasks: To save your tasks, click the "Save" button next to the corresponding time block. Your tasks will be stored in local storage.
+Technologies Used
+HTML
+CSS
+JavaScript
+Day.js - A JavaScript date library for parsing, formatting, and manipulating dates.
+Screenshot
+Work Day Scheduler Screenshot
 
 Contributors
-[Your Name]
+[Fiqre]
 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 Acknowledgments
-Day.js
+Special thanks to the Day.js library for simplifying date handling in this project.
+
+Feedback and Contributions
+We welcome your feedback and contributions to improve the Work Day Scheduler. Feel free to open issues or submit pull requests on the GitHub repository. Your input is valuable in making this tool even better for users.
+
+We hope you find Work Day Scheduler a useful addition to your daily routine!
