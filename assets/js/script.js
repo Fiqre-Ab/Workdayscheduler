@@ -27,8 +27,11 @@ $(function () {
   $(document).on("click", ".saveBtn", function () {
     var blockId = $(this).closest(".time-block").attr("id");
     var userInput = $(this).siblings("textarea").val();
-    localStorage.setItem(blockId, userInput);
-    appointment();
+    if (userInput.trim() !== "") {
+      // Check if the input is not empty or only contains whitespace
+      localStorage.setItem(blockId, userInput);
+      appointment();
+    }
   });
 
   // Load user input from local storage
